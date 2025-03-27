@@ -89,6 +89,7 @@
             padding: 2rem;
             margin: 2rem 0;
             border-left: 5px solid var(--primary-red);
+            border-radius: 10px;
         }
 
         .game-modes {
@@ -103,11 +104,13 @@
             padding: 1.5rem;
             text-align: center;
             border: 2px solid var(--primary-red);
-            transition: transform 0.3s ease;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .game-mode:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
         }
 
         .download-section {
@@ -145,7 +148,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="https://raw.githubusercontent.com/OpenCarnage/assets/refs/heads/main/opencarnage_logo.png" alt="OC: Open Combat" class="logo">
+            <img src="/api/placeholder/600/200" alt="Logo" class="logo">
             <p>An Open-Source Blood Physics Game</p>
         </div>
     </header>
