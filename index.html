@@ -34,11 +34,54 @@
             padding: 2rem 0;
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes logoFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         .logo {
             max-width: 600px;
             width: 100%;
             height: auto;
             margin-bottom: 1rem;
+            animation: logoFadeIn 1s ease-out;
+        }
+
+        header p {
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .game-description {
+            animation: fadeIn 1s ease-out 1s backwards;
+        }
+
+        .game-modes {
+            animation: fadeIn 1s ease-out 1.5s backwards;
+        }
+
+        .download-section {
+            animation: fadeIn 1s ease-out 2s backwards;
+        }
+
+        footer {
+            animation: fadeIn 1s ease-out 2.5s backwards;
         }
 
         .game-description {
@@ -102,7 +145,7 @@
 <body>
     <header>
         <div class="container">
-            <img src="https://raw.githubusercontent.com/OpenCarnage/assets/refs/heads/main/opencarnage_logo.png" alt="Logo" class="logo">
+            <img src="https://raw.githubusercontent.com/OpenCarnage/assets/refs/heads/main/opencarnage_logo.png" alt="OC: Open Combat" class="logo">
             <p>An Open-Source Blood Physics Game</p>
         </div>
     </header>
