@@ -111,7 +111,7 @@
             font-weight: bold;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Increased shadow size */
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
         }
 
         .download-btn:hover {
@@ -131,6 +131,35 @@
 
         header p {
             animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+            background-color: #CC0000;
         }
     </style>
 </head>
@@ -172,6 +201,17 @@
 
     <footer>
         <p>&copy; 2025 OpenCarnage | Open Source Community Project</p>
+        <div class="social-icons">
+            <a href="https://youtube.com/@opencarnage" class="social-icon">
+                <img src="https://raw.githubusercontent.com/OpenCarnage/opencarnage.github.io/refs/heads/main/Icons/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://odysee.com/@OpenCarnage:6?r=84LtFBscsJYxrTkiGKL8SCj7T5YXTjop" class="social-icon">
+                <img src="https://raw.githubusercontent.com/OpenCarnage/opencarnage.github.io/refs/heads/main/Icons/odysee.png" alt="Social Icon 2">
+            </a>
+            <a href="https://github.com/OpenCarnage" class="social-icon">
+                <img src="https://github.com/favicon.ico" alt="Social Icon 3">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
