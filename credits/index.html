@@ -141,6 +141,13 @@
             color: var(--primary-red);
         }
 
+        .team-member a {
+            text-decoration: none;
+            color: var(--primary-red);
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
         .team-member .role {
             font-style: italic;
             color: #cccccc;
@@ -180,6 +187,14 @@
             box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
         }
 
+        .contributor-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+        }
+
         .contributor .profile-pic-small {
             width: 60px;
             height: 60px;
@@ -197,6 +212,12 @@
         .contributor-info .role {
             font-size: 14px;
             color: #cccccc;
+        }
+
+        /* Fix for contributor links */
+        .contributor a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .hamburger-menu {
@@ -367,8 +388,10 @@
         <section class="credits-container">
             <div class="credit-box">
                 <div class="team-member">
-                    <img src="https://avatars.githubusercontent.com/u/195965574" alt="Team Member" class="profile-pic">
+                    <a href="https://youtube.com/@1cub4ucme" target="_blank">
+                    <img src="https://github.com/ICUB4UCME.png" alt="Team Member" class="profile-pic">
                     <h3>ICUB4UCME</h3>
+                    </a>
                     <div class="role">Project Leader</div>
                     <p>Web tester and Main ideas, responsible for the core concepts and feel of the game. Oversees aspects of the project.</p>
                 </div>
@@ -376,8 +399,10 @@
             
             <div class="credit-box main">
                 <div class="team-member">
-                    <img src="https://avatars.githubusercontent.com/u/154029390" alt="Project Director" class="profile-pic">
+                    <a href="https://linksta.cc/@landenhm" target="_blank">
+                    <img src="https://github.com/adevdoingdevthings.png " alt="Project Director" class="profile-pic">
                     <h3>LandenHM</h3>
+                    </a>
                     <div class="role">Project Director</div>
                     <p>Lead Game & Web Developer and Visionary leader who founded OpenCarnage with a passion for open-source and community-driven development. Oversees all aspects of the project.</p>
                 </div>
@@ -385,7 +410,7 @@
             
             <div class="credit-box">
                 <div class="team-member">
-                    <img src="https://avatars.githubusercontent.com/u/174296047" alt="Team Member" class="profile-pic">
+                    <img src="https://github.com/add2wsd25.png" alt="Team Member" class="profile-pic">
                     <h3>add2wsd</h3>
                     <div class="role">Project Leader</div>
                     <p>Art designer, Ideas and Secondary Programmer. Oversees aspects of the project.</p>
@@ -415,27 +440,33 @@
                 </div>
                 
                 <div class="contributor">
-                    <img src="https://cdn.discordapp.com/avatars/1132520328883617804/f8107e5fdeed04f93afce256bd0dfd70.png" alt="Contributor" class="profile-pic-small">
+                    <a href="https://www.instagram.com/l1vvy_xo/" target="_blank" class="contributor-link">
+                    <img src="https://cdn.discordapp.com/avatars/1132520328883617804/57eddc51dd60debb3796921e45954434.png" alt="Contributor" class="profile-pic-small">
                     <div class="contributor-info">
                         <h4>Liv</h4>
                         <div class="role">Web Tester</div>
                     </div>
+                  </a>
                 </div>
                 
                 <div class="contributor">
+                    <a href="https://youtube.com/@tylerdudeboy" target="_blank" class="contributor-link">
                     <img src="https://cdn.discordapp.com/avatars/437405193944956938/afc001da8923e0b5b1895b07c6b24caa.png" alt="Contributor" class="profile-pic-small">
                     <div class="contributor-info">
                         <h4>Tyler</h4>
                         <div class="role">Web Tester</div>
                     </div>
+                  </a>
                 </div>
                 
                 <div class="contributor">
+                    <a href="https://linktr.ee/greencube7" target="_blank" class="contributor-link">
                     <img src="https://uploads.scratch.mit.edu/get_image/user/63903856_60x60.png" alt="Contributor" class="profile-pic-small">
                     <div class="contributor-info">
                         <h4>GreenCube7</h4>
                         <div class="role">Web Tester</div>
                     </div>
+                    </a>
                 </div>
                 
                 <div class="contributor">
@@ -538,4 +569,4 @@
         });
     </script>
 </body>
-                  </html>
+    </html>
