@@ -55,8 +55,10 @@
 
         .container {
             max-width: 1200px;
+            width: 100%;
             margin: 0 auto;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         header {
@@ -67,6 +69,9 @@
             text-align: center;
             padding: 2rem 0;
             border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+            width: 100%;
+            left: 0;
+            right: 0;
         }
 
         .logo {
@@ -90,11 +95,24 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 2rem;
-            margin: 2rem 0;
+            margin: 2rem auto;
             border-left: 5px solid var(--primary-red);
             border-radius: 10px;
             animation: fadeIn 1s ease-out 1s backwards;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+
+        .game-description h2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .game-description p {
+            text-align: left;
+            width: 100%;
         }
 
         .game-modes {
@@ -130,8 +148,11 @@
             -webkit-backdrop-filter: blur(15px);
             animation: fadeIn 1s ease-out 2s backwards;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            margin: 2rem 0;
+            margin: 2rem auto;
             border-radius: 10px;
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
         }
 
         .download-btn {
@@ -160,9 +181,10 @@
             color: var(--primary-red);
             text-align: center;
             padding: 1rem;
-            position: relative;
-            bottom: 0;
             width: 100%;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
             animation: fadeIn 1s ease-out 2.5s backwards;
         }
 
@@ -287,6 +309,22 @@
         html {
             scroll-padding-top: 80px;
         }
+
+        /* Responsive styles for mobile */
+        @media (max-width: 768px) {
+            .game-modes {
+                grid-template-columns: 1fr;
+            }
+            
+            .download-section, .game-description {
+                width: 90% !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                left: 0 !important;
+                right: 0 !important;
+                position: relative !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -317,13 +355,13 @@
         </div>
     </header>
 
-    <div class="container">
-        <section id="about" class="game-description">
-            <h2>About the Game</h2>
-            <p>OpenCarnage is an intense, open-source fighting game that brings unprecedented depth to tactical combat. Combining realistic firearms combat with visceral melee weapon mechanics, OpenCarnage offers players a truly immersive combat experience.</p>
-            <p>Developed by the community, for the community, this game breaks boundaries with its innovative gameplay and customizable combat system.</p>
-        </section>
+    <section id="about" class="game-description">
+        <h2>About the Game</h2>
+        <p>OpenCarnage is an intense, open-source fighting game that brings unprecedented depth to tactical combat. Combining realistic firearms combat with visceral melee weapon mechanics, OpenCarnage offers players a truly immersive combat experience.</p>
+        <p>Developed by the community, for the community, this game breaks boundaries with its innovative gameplay and customizable combat system.</p>
+    </section>
 
+    <div class="container">
         <section id="game-modes" class="game-modes">
             <div class="game-mode">
                 <h3>Campaign Mode</h3>
@@ -338,6 +376,7 @@
                 <p>Battle against players worldwide in intense, high-stakes multiplayer matches. Test your skills, strategy, and reflexes in real-time combat.</p>
             </div>
         </section>
+    </div>
     </div>
 
     <section class="download-section">
